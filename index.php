@@ -1,52 +1,9 @@
 <?php
-//creo una class production 
-class Production
-{
-    //dentro la class production abbiamo le variabili titolo lingua e voto
-    public $title;
-    public $language;
-    public $vote;
+require_once __DIR__ . "./db.php";
+require_once __DIR__ . "./models/Production.php";
+require_once __DIR__ . "./models/Genre.php";
 
 
-    //ne determino una funzione per ogni variabile
-    function __construct(
-        string $title,
-        string $language,
-        int $vote,
-    ) {
-
-        //richiamiamo le funzioni
-        $this->title = $title;
-        $this->language = $language;
-        $this->vote = $vote;
-    }
-};
-//creo una classe riportandomi dientro le variabili oggetto
-$le_avventure_di_topolino = new Production(
-    "le avventure di topolino",
-    "Italiano",
-    5
-);
-
-$star_wars = new Production(
-    "star wars",
-    "Inglese",
-    12
-);
-
-$gabriele_va_in_campeggio = new Production(
-    "Gabriele va in campeggio",
-    "spagnolo",
-    10
-);
-
-
-$productions = [
-    $le_avventure_di_topolino,
-    $star_wars,
-    $gabriele_va_in_campeggio
-];
-var_dump($productions)
 
 
 
