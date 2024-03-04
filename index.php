@@ -21,6 +21,24 @@ class Production
         $this->vote = $vote;
     }
 }
+//creo una classe riportandomi dientro le variabili oggetto
+$le_avventure_di_topolino = new Production(
+    "le avventure di topolino",
+    "Italiano",
+    "5/10"
+);
+
+$star_wars = new Production(
+    "star wars",
+    "Inglese",
+    "12/10"
+);
+
+$gabriele_va_in_campeggio = new Production(
+    "Gabriele va in campeggio",
+    "spagnolo",
+    "10/10"
+)
 
 
 
