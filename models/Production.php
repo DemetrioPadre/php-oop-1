@@ -7,6 +7,7 @@ class Production
     public $title;
     public $language;
     public $vote;
+    public $genere;
 
 
     //ne determino una funzione per ogni variabile
@@ -14,11 +15,13 @@ class Production
         string $title,
         string $language,
         int $vote,
+        Genre $genere
     ) {
 
         //richiamiamo le funzioni
         $this->title = $title;
         $this->language = $language;
         $this->vote = $vote;
+        $this->genere = $genere;
     }
 };
