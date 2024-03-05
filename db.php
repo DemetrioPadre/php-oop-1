@@ -1,4 +1,6 @@
 <?php
+//includere sia production che genre giusto per averli nel caso sposti tutto o ti vuoi portare dietro
+
 
 $le_avventure_di_topolino = new Production(
     "le avventure di topolino",
