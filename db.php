@@ -29,4 +29,4 @@ $films = [
     $star_wars,
     $gabriele_va_in_campeggio
 ];
-var_dump($films);
+// var_dump($films);

@@ -24,32 +24,35 @@ require_once __DIR__ . "/db.php";
 </head>
 
 <body>
+    <div class="d-flex justify-content-center">
+        <?php foreach ($films as $film) : ?>
+            <ul>
+                <li>
+                    <b>Title:</b>
+                    <?php echo $film->title ?>
+                </li>
+                <li>
+                    <b>Language:</b>
+                    <?php echo $film->language ?>
 
-    <?php foreach ($films as $film) : ?>
-        <ul>
-            <li>
-                <b>Title:</b>
-                <?php echo $film->title ?>
-            </li>
-            <li>
-                <b>Language:</b>
-                <?php echo $film->language ?>
+                </li>
+                <li>
+                    <b>Vote:</b>
+                    <?php echo $film->vote ?>
+                </li>
+                <li>
+                    <b>Nome:</b>
+                    <?php echo $film->genere->nome ?>
+                </li>
+                <li>
+                    <b>Descrizione:</b>
+                    <?php echo $film->genere->descrizione ?>
+                </li>
+            </ul>
+        <?php endforeach; ?>
+    </div>
 
-            </li>
-            <li>
-                <b>Vote:</b>
-                <?php echo $film->vote ?>
-            </li>
-            <li>
-                <b>Nome:</b>
-                <?php echo $film->genere->nome ?>
-            </li>
-            <li>
-                <b>Descrizione:</b>
-                <?php echo $film->genere->descrizione ?>
-            </li>
-        </ul>
-    <?php endforeach; ?>
+
 </body>
 
 </html>
