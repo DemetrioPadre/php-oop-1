@@ -3,6 +3,7 @@
 require_once __DIR__ . "/models/Production.php";
 require_once __DIR__ . "/models/Genre.php";
 require_once __DIR__ . "/db.php";
+require_once __DIR__ . "/models/serietv.php";
 
 
 
@@ -24,7 +25,7 @@ require_once __DIR__ . "/db.php";
 </head>
 
 <body>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center mt-5">
         <?php foreach ($films as $film) : ?>
             <ul>
                 <li>

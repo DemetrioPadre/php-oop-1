@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/Genre.php";
+require_once __DIR__ . "/serietv.php";
 //creo una class production 
 class Production
 {
@@ -23,5 +24,15 @@ class Production
         $this->language = $language;
         $this->vote = $vote;
         $this->genere = $genere;
+    }
+    public function set_title($title)
+    {
+        if (empty($title) || !is_string($title))
+            return;
+        $this->title = ucfirst($title);
+    }
+    public function get_title()
+    {
+        return $this->title;
     }
 };
