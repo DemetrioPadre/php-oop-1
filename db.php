@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/models/serietv.php";
+require_once __DIR__ . "/models/Movie.php";
 
 
 
@@ -13,21 +14,27 @@ $le_avventure_di_topolino = new Production(
     "Le avventure di topolino",
     "Italiano",
     5,
-    new Genre("cartoon", "Topolino e i suoi amici in giro per il mondo")
+    new Genre("cartoon", "Topolino e i suoi amici in giro per il mondo"),
+    "20€",
+    50,
 );
 
 $star_wars = new Production(
     "Star wars",
     "Inglese",
     12,
-    new Genre("fantasy", "la guerra dell universo")
+    new Genre("fantasy", "la guerra dell universo"),
+    "MILLEMILAMIONI",
+    180
 );
 
 $gabriele_va_in_campeggio = new Production(
     "Gabriele va in campeggio",
     "Spagnolo",
     10,
-    new Genre("documentario", "un maitre sardo in giro per il mondo")
+    new Genre("documentario", "un maitre sardo in giro per il mondo"),
+    "GRATIS",
+    120
 );
 $Scrubs = new serieTV(
     "Scrubs",
@@ -35,7 +42,7 @@ $Scrubs = new serieTV(
     100,
     new Genre("commedia", "storia di un medico ai primi ferri"),
     10,
-    20
+    20,
 );
 
 

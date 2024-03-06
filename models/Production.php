@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/Genre.php";
 require_once __DIR__ . "/serietv.php";
+require_once __DIR__ . "/Movie.php";
 //creo una class production 
 class Production
 {
@@ -20,7 +21,7 @@ class Production
     ) {
 
         //richiamiamo le funzioni
-        $this->title = $title;
+        $this->set_title($title);
         $this->language = $language;
         $this->vote = $vote;
         $this->genere = $genere;

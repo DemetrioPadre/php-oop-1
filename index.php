@@ -4,6 +4,7 @@ require_once __DIR__ . "/models/Production.php";
 require_once __DIR__ . "/models/Genre.php";
 require_once __DIR__ . "/db.php";
 require_once __DIR__ . "/models/serietv.php";
+require_once __DIR__ . "/models/Movie.php";
 
 
 
@@ -30,7 +31,7 @@ require_once __DIR__ . "/models/serietv.php";
             <ul>
                 <li>
                     <b>Title:</b>
-                    <?php echo $film->title ?>
+                    <?php echo $film->get_title() ?>
                 </li>
                 <li>
                     <b>Language:</b>
@@ -42,13 +43,33 @@ require_once __DIR__ . "/models/serietv.php";
                     <?php echo $film->vote ?>
                 </li>
                 <li>
-                    <b>Nome:</b>
+                    <b>Tipo:</b>
                     <?php echo $film->genere->nome ?>
                 </li>
                 <li>
                     <b>Descrizione:</b>
                     <?php echo $film->genere->descrizione ?>
                 </li>
+                <?php if ($film instanceof Movie) : ?>
+                    <li>
+                        <b>Profittis:</b>
+                        <?php echo $film->money ?>
+                    </li>
+                    <li>
+                        <b>Durata:</b>
+                        <?php echo $film->duration ?>
+                    </li>
+                <?php endif ?>
+                <?php if ($film instanceof serieTV) : ?>
+                    <li>
+                        <b>Stagioni:</b>
+                        <?php echo $film->seasons ?>
+                    </li>
+                    <li>
+                        <b>Episodi:</b>
+                        <?php echo $film->episodes ?>
+                    </li>
+                <?php endif ?>
             </ul>
         <?php endforeach; ?>
     </div>
