@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/Production.php";
+
 class serieTV extends Production
 {
     public $seasons;
@@ -12,9 +13,11 @@ class serieTV extends Production
         Genre $genere,
         int $seasons,
         int $episodes,
+        // string $money,
     ) {
         parent::__construct($title, $language, $vote, $genere);
         $this->seasons = $seasons;
         $this->episodes = $episodes;
+        // $this->money = $money;
     }
 };

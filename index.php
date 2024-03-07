@@ -4,7 +4,8 @@ require_once __DIR__ . "/models/Production.php";
 require_once __DIR__ . "/models/Genre.php";
 require_once __DIR__ . "/db.php";
 require_once __DIR__ . "/models/serietv.php";
-require_once __DIR__ . "/models/Movie.php";
+require_once __DIR__ . "/models/movie.php";
+
 
 
 
@@ -50,8 +51,9 @@ require_once __DIR__ . "/models/Movie.php";
                     <b>Descrizione:</b>
                     <?php echo $film->genere->descrizione ?>
                 </li>
-                <?php if ($film instanceof Movie) : ?>
-                    <li>
+
+
+                <?php if ($film instanceof movie) : ?><li>
                         <b>Profittis:</b>
                         <?php echo $film->money ?>
                     </li>
@@ -69,6 +71,7 @@ require_once __DIR__ . "/models/Movie.php";
                         <b>Episodi:</b>
                         <?php echo $film->episodes ?>
                     </li>
+
                 <?php endif ?>
             </ul>
         <?php endforeach; ?>

@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . "/models/serietv.php";
-require_once __DIR__ . "/models/Movie.php";
+require_once __DIR__ . "/models/movie.php";
+
 
 
 
@@ -25,7 +26,7 @@ $star_wars = new Production(
     12,
     new Genre("fantasy", "la guerra dell universo"),
     "MILLEMILAMIONI",
-    180
+    180,
 );
 
 $gabriele_va_in_campeggio = new Production(
@@ -34,7 +35,7 @@ $gabriele_va_in_campeggio = new Production(
     10,
     new Genre("documentario", "un maitre sardo in giro per il mondo"),
     "GRATIS",
-    120
+    120,
 );
 $Scrubs = new serieTV(
     "Scrubs",
@@ -43,6 +44,7 @@ $Scrubs = new serieTV(
     new Genre("commedia", "storia di un medico ai primi ferri"),
     10,
     20,
+    "20€",
 );
 
 
@@ -52,4 +54,4 @@ $films = [
     $gabriele_va_in_campeggio,
     $Scrubs
 ];
-// var_dump($films);
+var_dump($films);
