@@ -36,6 +36,7 @@ $gabriele_va_in_campeggio = new Production(
     new Genre("documentario", "un maitre sardo in giro per il mondo"),
     "GRATIS",
     120,
+
 );
 $Scrubs = new serieTV(
     "Scrubs",
@@ -44,7 +45,7 @@ $Scrubs = new serieTV(
     new Genre("commedia", "storia di un medico ai primi ferri"),
     10,
     20,
-    "20€",
+
 );
 
 
@@ -54,4 +55,4 @@ $films = [
     $gabriele_va_in_campeggio,
     $Scrubs
 ];
-var_dump($films);
+// var_dump($films);
