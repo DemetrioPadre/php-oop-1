@@ -11,7 +11,7 @@ require_once __DIR__ . "/models/movie.php";
 //includere sia production che genre giusto per averli nel caso sposti tutto o ti vuoi portare dietro
 
 
-$le_avventure_di_topolino = new Production(
+$le_avventure_di_topolino = new Movie(
     "Le avventure di topolino",
     "Italiano",
     5,
@@ -20,7 +20,7 @@ $le_avventure_di_topolino = new Production(
     50,
 );
 
-$star_wars = new Production(
+$star_wars = new Movie(
     "Star wars",
     "Inglese",
     12,
@@ -29,7 +29,7 @@ $star_wars = new Production(
     180,
 );
 
-$gabriele_va_in_campeggio = new Production(
+$gabriele_va_in_campeggio = new Movie(
     "Gabriele va in campeggio",
     "Spagnolo",
     10,

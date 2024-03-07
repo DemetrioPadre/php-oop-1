@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . "/Production.php";
 
-class movie extends Production
+class Movie extends Production
 {
     public $money;
     public $duration;

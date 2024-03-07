@@ -54,7 +54,7 @@ require_once __DIR__ . "/models/movie.php";
                 </li>
 
 
-                <?php if ($film instanceof movie) : ?>
+                <?php if ($film instanceof Movie) : ?>
                     <li>
                         <b>Profittis:</b>
                         <?php echo $film->money ?>
